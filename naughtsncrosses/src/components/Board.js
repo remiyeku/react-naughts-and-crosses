@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Square from "./Square";
-import "./Board.css";
+import Tiles from "./Tiles";
+import "./board.css";
 
 function Board() {
   const [tiles, setTiles] = useState(Array(9).fill(null));
@@ -12,7 +12,7 @@ function Board() {
       return;
     }
 
-    const updatedTiles = [...tiles]; // Create a copy of the tiles array
+    const updatedTiles = [...tiles];
     updatedTiles[i] = xturn ? "X" : "O";
     setTiles(updatedTiles);
     setXturn(!xturn);
@@ -35,7 +35,7 @@ function Board() {
   };
 
   let renderSquare = (i) => {
-    return <Square value={tiles[i]} onClick={() => handleClick(i)} />;
+    return <Tiles value={tiles[i]} onClick={() => handleClick(i)} />;
   };
 
   return (
