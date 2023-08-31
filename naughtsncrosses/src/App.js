@@ -1,4 +1,3 @@
-import "./App.css";
 import Board from "./components/Tiles";
 
 function App() {
