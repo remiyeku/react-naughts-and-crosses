@@ -3,9 +3,11 @@ import "./tiles.css";
 
 function Tiles({ onClick, value }) {
   return (
-    <button className="tiles" onClick={onClick}>
-      {value}
-    </button>
+    <div className="tile-container">
+      <button className="tiles" onClick={onClick}>
+        {value}
+      </button>
+    </div>
   );
 }
 

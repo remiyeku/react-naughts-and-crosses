@@ -1,4 +1,24 @@
-.board-row:after {
+.game-container {
+  width:100%;
+  margin-left: 30vw;
+  margin-top: 10vw;
+  position: fixed;
+}
+
+.game {
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.status{
+  padding-left: 4vw;
+  font-size: 50px;
+  font-weight: 400;
+  color: #002f61;
+}
+
+.game-row:after {
     clear: both;
     content: "";
     display: table;
@@ -7,32 +27,33 @@
   button:hover {
     cursor: pointer;
   }
-  .status, .restart {
+  .status, .reset {
     margin-top: 10px;
   }
   
 
-  .restart {
-    padding: 10px 15px;
+  .reset {
+    padding: 30px 35px;
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    font-size: 25px;
+    background-color: #002f61;
+    border-color: #b0d6ff;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
   
-  .restart:active {
-    color: #fff;
+  .reset:active {
+    color: #000000;
     background-color: #0062cc;
     border-color: #005cbf;
   }
   
-  .restart:hover {
-    color: #fff;
-    background-color: #0069d9;
+  .reset:hover {
+    color: #000000;
+    background-color: #d2e8ff;
     border-color: #0062cc;
   }
   
-  .restart:focus {
+  .reset:focus {
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
   }
