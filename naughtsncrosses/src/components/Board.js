@@ -39,28 +39,33 @@ function Board() {
   };
 
   return (
-    <div className="game-container">
-      <div className="game">
-        <div className="game-row">
-          {renderSquare(0)}
-          {renderSquare(1)}
-          {renderSquare(2)}
-        </div>
-        <div className="game-row">
-          {renderSquare(3)}
-          {renderSquare(4)}
-          {renderSquare(5)}
-        </div>
-        <div className="game-row">
-          {renderSquare(6)}
-          {renderSquare(7)}
-          {renderSquare(8)}
-        </div>
-        <div className="status">{status}</div>
-        <div>
-          <button className="reset" onClick={handleRestart}>
-            Restart
-          </button>
+    <div className="full-container">
+      <p className="title">Naughts and Crosses!</p>
+      <div className="game-container">
+        <div className="game">
+          <div className="game-row">
+            {renderSquare(0)}
+            {renderSquare(1)}
+            {renderSquare(2)}
+          </div>
+          <div className="game-row">
+            {renderSquare(3)}
+            {renderSquare(4)}
+            {renderSquare(5)}
+          </div>
+          <div className="game-row">
+            {renderSquare(6)}
+            {renderSquare(7)}
+            {renderSquare(8)}
+          </div>
+          <div className="status-container">
+            <p className="status">{status}</p>
+          </div>
+          <div className="button-container">
+            <button className="reset" onClick={handleRestart}>
+              Restart
+            </button>
+          </div>
         </div>
       </div>
     </div>
