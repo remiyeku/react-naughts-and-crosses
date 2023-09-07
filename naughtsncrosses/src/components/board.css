@@ -1,3 +1,7 @@
+*{
+  zoom: 90%;
+}
+
 .full-container{
   justify-content: center;
   align-items: center;
@@ -5,7 +9,6 @@
   flex-direction: column;
   position: relative;
   flex-wrap: nowraps;
-  zoom:90%
 }
 
 .game-container {
