@@ -24,7 +24,7 @@ function Board() {
   if (winner) {
     status = `Winner: ${winner}`;
   } else if (tiles.every((tile) => tile !== null)) {
-    status = "Tie!";
+    status = "Draw!";
   } else {
     status = "Next player: " + (xturn ? "X" : "O");
   }
