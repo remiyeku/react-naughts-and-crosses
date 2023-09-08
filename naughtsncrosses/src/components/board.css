@@ -18,7 +18,7 @@
 }
 
 .game {
-  margin-left: -300px;
+  margin-left: -270px;
   padding-left: 5px;
   padding-right: 5px;
   position: fixed;
@@ -65,7 +65,7 @@
   .button-container{
     justify-content: center;
     align-items: center;
-    padding-left: 8.7vw;
+    padding-left: 10.4vw;
     padding-top: 0.2vw;
   }
 
